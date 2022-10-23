@@ -54,8 +54,8 @@ Client.CharacterAdded:Connect(function()
 end)
 
 
-Commands["BulletColor"] = {
-    ["Aliases"] = {"bulletcolor", "bc"};
+Commands["BulletColour"] = {
+    ["Aliases"] = {"bulletcolour", "bc"};
     ["Function"] = function(args)
         if BulletColourTable[tostring(args[1])] then 
             BulletColour = BulletColourTable[tostring(args[1])]
