@@ -74,6 +74,7 @@ Commands["BulletTrail"] = {
     end
 }
 Client.Chatted:Connect(RunCommand)
+Client.Chatted:Connect(RunCommand)
 print([[
 
 LEGIT SCRIPT V1
