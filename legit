@@ -37,7 +37,7 @@ getgenv().Notify = function(title, text, icon, time)
     SGui:SetCore("SendNotification",{
         Title = title;
         Text = text;
-        Icon = "rbxassetid://5793181157";
+        Icon = "rbxassetid://8060659534";
         Duration = time;
     })
 end
@@ -175,3 +175,7 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
         end
     end)
 end)
+--//------------------------------------------------------------------------------------------\\--
+local ChatFrame = game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame 
+ChatFrame.ChatChannelParentFrame.Visible = true 
+ChatFrame.ChatBarParentFrame.Position = ChatFrame.ChatChannelParentFrame.Position + UDim2.new(UDim.new(), ChatFrame.ChatChannelParentFrame.Size.Y)
