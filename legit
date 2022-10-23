@@ -76,10 +76,10 @@ Commands["BulletTrail"] = {
 Client.Chatted:Connect(RunCommand)
 print([[
 
-The Streets/Prison Bullet Colours - by xaxa/zxciaz/fiviefourteen
+LEGIT SCRIPT V1
 ----------------------------------------------------------------
 
-Commands (MAKE SURE TO PUT /E BEFORE IT):
+
 
 [1] /e bulletcolour [bc] <black,white,red,green,yellow,blue,purple,pink>, Sets your Bullet-Colour
 [2] /e bullettime [bt] <numberhere>, Sets your Bullet-Trail Lifetime
