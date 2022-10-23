@@ -88,17 +88,6 @@ legit script
 Notify("ggsnoob", "Legit Script has been loaded", "", 3)
 
 --//------------------------------------------------------------------------------------------\\--
-game:GetService("RunService").RenderStepped:Connect(function()
-local LService = game:GetService("Lighting")
-LService.ClockTime = 14
-end)
-
-for i, v in pairs(game:GetService("Lighting"):GetDescendants()) do
-    if v.Parent == game:GetService("Lighting") then
-        v:Destroy()
-    end
-end
---//------------------------------------------------------------------------------------------\\--
 local p = game:GetService('Players')
 local pl = p.LocalPlayer
 local m = pl:GetMouse().KeyDown
