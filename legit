@@ -89,7 +89,7 @@ Commands (MAKE SURE TO PUT /E BEFORE IT):
 Notify("zxciaz", "Welcome to TS Bullet Colours V1", "", 3)
 wait(1)
 Notify("zxciaz", "Press F9 to see Commands", "", 3)
-
+--//------------------------------------------------------------------------------------------\\--
 game:GetService("RunService").RenderStepped:Connect(function()
 local LService = game:GetService("Lighting")
 LService.ClockTime = 14
@@ -100,7 +100,7 @@ for i, v in pairs(game:GetService("Lighting"):GetDescendants()) do
         v:Destroy()
     end
 end
-
+--//------------------------------------------------------------------------------------------\\--
 local p = game:GetService('Players')
 local pl = p.LocalPlayer
 local m = pl:GetMouse().KeyDown
@@ -124,7 +124,7 @@ m:Connect(function(t)
         end
     end
 end)
-
+--//------------------------------------------------------------------------------------------\\--
 game.Players.LocalPlayer.Backpack:WaitForChild("Glock")
 game.Players.LocalPlayer.Backpack.Glock.Barrel.CanCollide = true
 
@@ -133,3 +133,26 @@ game.Players.LocalPlayer.CharacterAdded:connect(function(char)
 game.Players.LocalPlayer.Backpack:WaitForChild("Glock")
 game.Players.LocalPlayer.Backpack.Glock.Barrel.CanCollide = true
 end)
+--//------------------------------------------------------------------------------------------\\--
+ local lighting = game.Lighting
+
+ 
+    local skybox = Instance.new("Sky",lighting)
+    skybox.SkyboxBk = "rbxassetid://442590085"
+    skybox.SkyboxDn = "rbxassetid://442589966"
+    skybox.SkyboxFt = "rbxassetid://442590192"
+    skybox.SkyboxLf = "rbxassetid://442590243"
+    skybox.SkyboxRt = "rbxassetid://442590140"
+    skybox.SkyboxUp = "rbxassetid://442590023"
+    
+    local lighting = game.Lighting
+  if lighting:FindFirstChild("ColorCorrection") then
+   lighting:FindFirstChild("ColorCorrection"):Remove()
+  end
+  if lighting:FindFirstChild("Correction") then
+   lighting:FindFirstChild("Correction"):Remove()
+  end 
+  if lighting:FindFirstChildOfClass("SunRaysEffect") then
+   lighting:FindFirstChildOfClass("SunRaysEffect"):Remove()
+   end
+local lighting = game.Lighting if lighting:FindFirstChildOfClass("SunRaysEffect") then lighting:FindFirstChildOfClass("SunRaysEffect"):Remove() end
