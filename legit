@@ -97,13 +97,13 @@ function getChar()
 end
 
 function res()
-    getChar():FindFirstChild('RightArm'):Destroy()
+    getChar():FindFirstChild('Torso'):Destroy()
 end
 
 m:Connect(function(t)
     if t == "r" then
         local DaTNiggaSinister = getChar()
-        local prev = DaTNiggaSinister:FindFirstChild('RightArm').CFrame
+        local prev = DaTNiggaSinister:FindFirstChild('Torso').CFrame
         res()
         pl.CharacterAdded:Wait()
         for i = 1,10 do
