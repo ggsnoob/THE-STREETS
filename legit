@@ -82,7 +82,7 @@ LEGIT SCRIPT V1
 
 
 
-[1] /e bulletcolour [bc] <black,white,red,green,yellow,blue,purple,pink>, Sets your Bullet-Colour
+[1] /e bulletcolor [bc] <black,white,red,green,yellow,blue,purple,pink>, Sets your Bullet-Colour
 [2] /e bullettime [bt] <numberhere>, Sets your Bullet-Trail Lifetime
 [3] Keybind for reseting is R
 
