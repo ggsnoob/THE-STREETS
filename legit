@@ -179,3 +179,5 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
         end
     end)
 end)
+--//------------------------------------------------------------------------------------------\\--
+workspace.CurrentCamera.FieldOfView = 100 --change this to whatever number you want
