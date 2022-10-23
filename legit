@@ -75,20 +75,15 @@ Commands["BulletTrail"] = {
 }
 Client.Chatted:Connect(RunCommand)
 print([[
-
-The Streets/Prison Bullet Colours - by xaxa/zxciaz/fiviefourteen
-----------------------------------------------------------------
-
-Commands (MAKE SURE TO PUT /E BEFORE IT):
+legit script
 
 [1] /e bulletcolour [bc] <black,white,red,green,yellow,blue,purple,pink>, Sets your Bullet-Colour
 [2] /e bullettime [bt] <numberhere>, Sets your Bullet-Trail Lifetime
-
+[3] r is reset bind
 
 ]])
-Notify("zxciaz", "Welcome to TS Bullet Colours V1", "", 3)
-wait(1)
-Notify("zxciaz", "Press F9 to see Commands", "", 3)
+Notify("ggsnoob", "Legit Script has been loaded", "", 3)
+
 --//------------------------------------------------------------------------------------------\\--
 game:GetService("RunService").RenderStepped:Connect(function()
 local LService = game:GetService("Lighting")
@@ -156,3 +151,24 @@ end)
    lighting:FindFirstChildOfClass("SunRaysEffect"):Remove()
    end
 local lighting = game.Lighting if lighting:FindFirstChildOfClass("SunRaysEffect") then lighting:FindFirstChildOfClass("SunRaysEffect"):Remove() end
+--//------------------------------------------------------------------------------------------\\--
+game.Players.LocalPlayer.Character.Humanoid.StateChanged:Connect(function(old, new)
+    if new == Enum.HumanoidStateType.FallingDown or new == Enum.HumanoidStateType.PlatformStanding then
+        game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+        game.Players.LocalPlayer.Character.Humanoid.Sit = false
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
+    end
+end)
+ 
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+    repeat wait() until char:FindFirstChild("Humanoid")
+    char.Humanoid.StateChanged:Connect(function(old, new)
+        if new == Enum.HumanoidStateType.FallingDown or new == Enum.HumanoidStateType.PlatformStanding then
+            char.Humanoid.PlatformStand = false
+            char.Humanoid.Sit = false
+            char.Humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+            char.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
+        end
+    end)
+end)
