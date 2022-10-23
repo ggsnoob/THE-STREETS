@@ -33,15 +33,6 @@ getgenv().RunCommand = function(Cmd)
     end)
 end
 
-getgenv().Notify = function(title, text, icon, time)
-    SGui:SetCore("SendNotification",{
-        Title = title;
-        Text = text;
-        Icon = "rbxassetid://5793181157";
-        Duration = time;
-    })
-end
-
 getgenv().ApplyChanges = function(T)
     if T and T:IsA("Trail") then 
         T.Color = BulletColour
