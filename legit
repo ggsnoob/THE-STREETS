@@ -11,7 +11,7 @@ local BulletColourTable = {
     ["yellow"] = CNew(C3(255, 255, 0));
     ["pink"] = CNew(C3(255, 20, 147));
     ["purple"] = CNew(C3(128, 0, 128));
-    ["cg"] = ColorSequence.new(C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230));
+    ["changing"] = ColorSequence.new(C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230));
 }
 
 getgenv().GetInit = function(CName)
@@ -83,7 +83,7 @@ LEGIT SCRIPT V1
 
 
 
-[1] /e bulletcolor [bc] <black,white,red,green,yellow,blue,purple,pink>, Sets your Bullet-Colour
+[1] /e bulletcolor [bc] <black,white,red,green,yellow,blue,purple,pink,changing>, Sets your Bullet-Colour
 [2] /e bullettime [bt] <numberhere>, Sets your Bullet-Trail Lifetime
 [3] Keybind for reseting is R
 
