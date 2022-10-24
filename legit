@@ -11,6 +11,7 @@ local BulletColourTable = {
     ["yellow"] = CNew(C3(255, 255, 0));
     ["pink"] = CNew(C3(255, 20, 147));
     ["purple"] = CNew(C3(128, 0, 128));
+    ["cg"] = ColorSequence.new(C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230));
 }
 
 getgenv().GetInit = function(CName)
