@@ -9,7 +9,7 @@ local BulletColourTable = {
     ["green"] = CNew(C3(0, 255, 0));
     ["blue"] = CNew(C3(0, 0, 255));
     ["yellow"] = CNew(C3(255, 255, 0));
-    ["pink"] = CNew(C3(255, 20, 147));
+    ["pink"] = CNew(C3(255, 102, 204));
     ["purple"] = CNew(C3(128, 0, 128));
     ["changing"] = ColorSequence.new(C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230),C3(0,0,255),C3(173,216,230));
 }
